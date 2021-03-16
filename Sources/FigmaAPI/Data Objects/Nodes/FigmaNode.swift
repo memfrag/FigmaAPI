@@ -94,6 +94,7 @@ extension FigmaNode {
             case .text: node = try nodeContainer.decode(FigmaTextNode.self)
             case .slice: node = try nodeContainer.decode(FigmaSliceNode.self)
             case .component: node = try nodeContainer.decode(FigmaComponentNode.self)
+            case .componentSet: node = try nodeContainer.decode(FigmaComponentSetNode.self)
             case .instance: node = try nodeContainer.decode(FigmaInstanceNode.self)
             }
             nodes.append(node)
@@ -121,6 +122,7 @@ extension FigmaNode {
         case .text: node = try container.decode(FigmaTextNode.self, forKey: key)
         case .slice: node = try container.decode(FigmaSliceNode.self, forKey: key)
         case .component: node = try container.decode(FigmaComponentNode.self, forKey: key)
+        case .componentSet: node = try container.decode(FigmaComponentSetNode.self, forKey: key)
         case .instance: node = try container.decode(FigmaInstanceNode.self, forKey: key)
         }
 

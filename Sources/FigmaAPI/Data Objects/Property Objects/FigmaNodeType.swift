@@ -16,5 +16,6 @@ public enum FigmaNodeType: String, Decodable {
     case text = "TEXT"
     case slice = "SLICE"
     case component = "COMPONENT"
+    case componentSet = "COMPONENT_SET"
     case instance = "INSTANCE"
 }

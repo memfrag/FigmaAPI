@@ -65,6 +65,7 @@ FigmaNode
  ├─FigmaCanvasNode
  ├─FigmaFrameNode
  │  ├─FigmaComponentNode
+ |  |-FigmaComponentSetNode
  │  ├─FigmaGroupNode
  │  └─FigmaInstanceNode
  ├─FigmaSliceNode
